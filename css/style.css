@@ -1,0 +1,71 @@
+
+
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: Inclusive Sans; 
+  src: url(InclusiveSans-VariableFont_wght.ttf); 
+}
+
+@font-face {
+  font-family: Aktura; 
+  src: url(Aktura-Regular.otf.lnk); 
+}
+
+h1{
+    text-align: center;
+    font-family: Aktura;
+    margin-top: 2rem;
+    font-size: 6rem;
+    margin-bottom: 0rem;
+}
+
+section{
+    display: flex;
+}
+
+h2{
+    margin-left: 6rem;
+    margin-top: 0rem;
+    font-family: Inclusive Sans;
+    color: #6100B0;
+}
+
+.description{
+    width: 40%;
+   margin-left: 6rem;
+   font-family: Inclusive Sans;
+}
+
+video {
+    display: block;
+    margin-top: 0rem;
+    margin-right: 6rem;
+
+}
+
+footer{
+    background-color: #111111;
+    text-align: right;
+    padding: 0.2rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-text{
+    margin-right: 2rem;
+    font-family: Inclusive Sans;
+}
+
+
+.intro{
+  flex: 1; /* This pushes the footer down by taking up all extra space */
+}
