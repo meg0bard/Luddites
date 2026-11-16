@@ -1,13 +1,6 @@
 
 
-body{
-    background-color: black;
-    color: white;
-    display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
+/*fonts*/
 @font-face {
   font-family: Inclusive Sans; 
   src: url(InclusiveSans-VariableFont_wght.ttf); 
@@ -18,36 +11,63 @@ body{
   src: url(Aktura-Regular.otf.lnk); 
 }
 
-h1{
-    text-align: center;
-    font-family: Aktura;
-    margin-top: 2rem;
-    font-size: 6rem;
-    margin-bottom: 0rem;
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+  flex-direction: column;
 }
 
-section{
+/*HEADER*/
+header{
+    background-color: #111111;
+    margin: 0 0 3rem 0;
     display: flex;
+     justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    font-family: Inclusive Sans;
+    margin-right: 4rem
+}
+
+.content-section video {
+    width: 70%;
+}
+
+/*TITLES*/
+h1{
+    margin: 0 0 0 0;
+    text-align: left;
+    font-family: Aktura;
+    font-size: 4rem;
+    margin-left: 4rem;
 }
 
 h2{
-    margin-left: 6rem;
-    margin-top: 0rem;
+   margin: 0 0 0 4rem;
     font-family: Inclusive Sans;
     color: #6100B0;
 }
 
-.description{
-    width: 40%;
-   margin-left: 6rem;
-   font-family: Inclusive Sans;
+
+/*CONTENT PER SE*/
+
+.content-section{
+    display: flex;
+    gap: 1.25rem;   
+    margin: 0 4rem 0 4rem;
+}
+.content-section p{
+    font-family: Inclusive Sans;
+    width: 90%;
 }
 
-video {
-    display: block;
-    margin-top: 0rem;
-    margin-right: 6rem;
+/*FOOTER*/
 
+.intro{
+  flex: 1; /* This pushes the footer down by taking up all extra space */
 }
 
 footer{
@@ -61,11 +81,42 @@ footer{
 }
 
 .footer-text{
-    margin-right: 2rem;
+    margin-right: 4rem;
     font-family: Inclusive Sans;
+    font-size: 0.75rem;
+}
+
+/*FLIPBOOK*/
+.spread-viewer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.spread-viewer img {
+    width: 50%;
+    height: auto;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
 }
 
 
-.intro{
-  flex: 1; /* This pushes the footer down by taking up all extra space */
+
+/*MEDIA QUERY PHONE*/
+
+@media all and (max-width: 1000px) {
+    
+    .content-section{
+        flex-direction: column;  }
+    
+    .content-section p, .content-section video {max-width: 100%;
+    width: 100%;}
+
 }
